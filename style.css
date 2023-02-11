@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/*Start Common Selector */
+
+:root{
+  --blue:#022293;
+  --white:#fff;
+  --background:rgb(255, 0, 128);
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+  
+    display: flex;
+}
+.content{
+  width: 60%;
+}
+.img-container{
+  width: 40%;
+}
+.container:not(header .container){
+  padding: 10px;
+}
+h2{
+  text-align: center;
+  color: var(--white);
+  margin: 50px 0px 30px;
+}
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+input,textarea{
+  outline: none;
+  border: none;
+}
+.fa-brands{
+  font-size: 30px;
+}
+.fa-facebook{
+  color: #7c7cff;
+}
+.fa-youtube{
+  color: red;
+}
+.fa-instagram{
+  color: pink;
+}
+
+/*End Common Selector */
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+main {
+  background: var(--background);
+}
+
+/* Start Nav Section */
+nav{
+  width: 100%;
+  height: 80px;
+  background:rgba(255, 0, 128, 0.747);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+nav .nav-inner{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white);
+}
+nav .nav-inner .nav-item ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 15px;
+}
+nav .nav-inner .nav-item ul li:hover{
+  border-bottom: 1px solid var(--blue);
+}
+.fa-bars{
+  display: none;
+  font-size: 27px;
+}
+/* End Nav Section */
+
+/* Start Header Section */
+header .container {
+  align-items: center;
+
+  border: 3px solid var(--white);
+  border-radius: 5px;
+
+  background: var(--blue);
+}
+header .container .content {
+  height: 100%;
+  padding: 40px 10px;
+  text-align: center;
+  color: var(--white);
+}
+header .container .content h4 {
+  letter-spacing: 5px;
+}
+
+header .container .content h4,
+header .container .content h1,
+header .container .content p {
+  margin-bottom: 20px;
+}
+header .container .img-container img {
+  width: 100%;
+}
+.social-icon a {
+  font-size: 30px;
+  margin: 0px 20px;
+}
+
+/*End Header Section */
+
+/* Start About Me Section */
+#aboutme .container .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutme .container .img-container img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 3px 3px 7px black;
+}
+#aboutme .container .content h3:first-of-type{
+  font-size: 25px;
+  color: #022293;
+}
+#aboutme .container .content h3:last-of-type{
+  font-size: 20px;
+  color: rgb(75, 75, 75);
+}
+#aboutme .container .content p{
+  color: var(--white);
+  line-height: 25px;
+  margin-top: 10px;
+}
+/* End About Me Section */
+
+/* Start Skill Section */
+#skill  .container .content h5{
+  color: var(--white);
+  margin: 10px 0;
+}
+#skill  .container .content span{
+  color: var(--white);
+  margin: 5px;
+  padding: 5px 7px;
+  background: rgba(211, 211, 211, 0.532);
+  border-radius: 5px;
+  display: inline-block;
+}
+#skill .container .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skill .container .img-container img{
+  width: 100%;
+  border-radius: 5px;
+}
+/* End Skill Section */
+
+/* Start My Work Section */
+
+#mywork .container .card{
+  background: var(--blue);
+  color: var(--white);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+#mywork .container .card h3{
+  margin: 15px 0px;
+}
+#mywork .container .card p{
+  line-height: 28px;
+}
+
+/* End My Work Section */
+
+/* Start Contact Me Section */
+
+#contactme .container{
+  display: flex;
+}
+#contactme .container .info{
+  width: 50%;
+}
+#contactme .container .info div{
+  color: var(--white);
+  margin: 10px 0px;
+}
+#contactme .container .input{
+  width: 50%;
+}
+#contactme .container .input input,textarea{
+  padding: 5px;
+  margin: 7px 5px 0px 0px;
+  border-radius: 3px;
+}
+#contactme .container .input input{
+  width: 48.5%;
+}
+#contactme .container .input textarea{
+  width: 100%;
+  height: 70px;
+}
+#contactme .container .input button{
+  outline: none;
+  border: none;
+  display: block;
+  padding: 5px 15px;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 3px;
+}
+/* End Contact Me Section */
+
+/* Start footer Section */
+
+footer{
+  background-color: var(--blue);
+  margin-top: 50px;
+  padding-top: 30px;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .card{
+  width: 30%;
+  background: var(--blue);
+  margin: 0px 10px;
+  line-height: 40px;
+}
+footer .card h3{
+  margin-bottom: 15px;
+}
+footer .card:nth-of-type(2) a{
+  display: block;
+}
+/* End footer Section */
+
+.fa-arrow-up{
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  background: var(--white);
+  color: black;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--background);border-radius:3px}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
+
+@media (max-width:768px) {
+  .nav-item{
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+  }
+  header .container{
+    flex-direction: column-reverse;
+    border: none;
+    border-top: 2px solid white;
+  }
+  header .img-container img,
+  #skill .container .img-container img{
+    max-width: 400px;
+  }
+  .container{
+    flex-direction: column;
+    max-width: 768px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .content{
+    width: 100%;
+  }
+  .img-container{
+    width: 100%;
+  }
+  #aboutme .container .img-container{
+    margin-bottom: 10px;
+  }
+  #skill .container .img-container{
+    margin-top: 10px;
+  }
+  #contactme .container .info,
+  #contactme .container .input{
+    max-width: 400px;
+    width: auto;
+  }
+  #contactme .container .input input{
+    width: 100%;
+  }
+  footer .card{
+    width: 100%;
+    line-height: 25px;
+    margin:10px 0;
+  }
+}
